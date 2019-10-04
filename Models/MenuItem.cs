@@ -8,13 +8,15 @@ namespace BurgerShack.Models
 
     public virtual string GetTemplate()
     {
-      return $@"
+      string template = $@"
 Title: {Title}
 Price: {Price:c}
 Description: {Description}
 
 Press any key to return to the main menu.
       ";
+
+      return template;
     }
 
     public MenuItem(string title, double price, string desc)

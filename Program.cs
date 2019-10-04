@@ -10,6 +10,7 @@ namespace BurgerShack
       Console.WriteLine("Welcome to the shack!");
 
       MenuItemController _mc = new MenuItemController();
+      _mc.UserInput();
     }
   }
 }

@@ -27,6 +27,17 @@ namespace BurgerShack.Services
       Items.AddRange(new MenuItem[] { soda, water, coffee, burger, hotDog, salad, pizza, fries, fruitCup, mac });
     }
 
+    public void GetItems()
+    {
+      Messages.Add("Available Items");
+      for (int i = 0; i < Items.Count; i++)
+      {
+        MenuItem m = Items[i];
+        Messages.Add($"{i + 1}: {m.Title} - {m.Price}");
+      }
+      Messages.Add("Enter a number to view an item or (Q)uit");
+    }
+
     public MenuItemService()
     {
       Items = new List<MenuItem>();
