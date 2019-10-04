@@ -38,6 +38,11 @@ namespace BurgerShack.Services
       Messages.Add("Enter a number to view an item or (Q)uit");
     }
 
+    public void GetItems(int index)
+    {
+
+    }
+
     public MenuItemService()
     {
       Items = new List<MenuItem>();

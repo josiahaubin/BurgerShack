@@ -11,6 +11,21 @@ namespace BurgerShack.Controllers
     {
       _ms.GetItems();
       Print();
+      string userAns = Console.ReadLine().ToLower();
+      Console.Clear();
+
+      switch (userAns)
+      {
+        case "q":
+          Environment.Exit(1);
+          break;
+        default:
+          if (int.TryParse(userAns, out int index))
+          {
+            _ms.GetItems(index - 1);
+          }
+          break;
+      }
     }
 
     private void Print()
