@@ -1,4 +1,5 @@
 ﻿using System;
+using BurgerShack.Controllers;
 
 namespace BurgerShack
 {
@@ -6,7 +7,9 @@ namespace BurgerShack
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      Console.WriteLine("Welcome to the shack!");
+
+      MenuItemController _mc = new MenuItemController();
     }
   }
 }

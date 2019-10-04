@@ -2,7 +2,7 @@ namespace BurgerShack.Models
 {
   public class Sides : MenuItem
   {
-    public Sides(string title, int price, string desc) : base(title, price, desc)
+    public Sides(string title, double price, string desc) : base(title, price, desc)
     {
     }
   }
