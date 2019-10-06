@@ -23,6 +23,9 @@ namespace BurgerShack.Controllers
           if (int.TryParse(userAns, out int index))
           {
             _ms.GetItems(index - 1);
+            Print();
+            Console.ReadKey();
+            Console.Clear();
           }
           break;
       }

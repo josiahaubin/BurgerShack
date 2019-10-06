@@ -40,7 +40,15 @@ namespace BurgerShack.Services
 
     public void GetItems(int index)
     {
-
+      if (index < Items.Count && index > -1)
+      {
+        MenuItem item = Items[index];
+        Messages.Add(item.GetTemplate());
+      }
+      else
+      {
+        Messages.Add("Invalid choice");
+      }
     }
 
     public MenuItemService()
